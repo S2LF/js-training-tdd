@@ -8,7 +8,14 @@
  */
 
 // Your code:
+function getLength(arg){
+    let ind = 0
+    for (let index = 1; index <= arg.length; index++) {
+        ind = index            
+    }
 
+    return ind
+}
 //* Begin of tests
 const assert = require('assert');
 
