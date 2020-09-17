@@ -11,6 +11,14 @@
 
 // Your code:
 
+function min(nb, nb2){
+    if(nb<nb2){
+        return nb
+    } else {
+        return nb2
+    }
+}
+
 //* Begin of tests
 const assert = require('assert');
 

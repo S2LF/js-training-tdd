@@ -8,6 +8,28 @@
  */
 
 // Your code:
+function sign(nb){
+    if(nb>0){
+        return 1
+    } else if(nb<0){
+        return -1
+    } else if (nb==0){
+        return 0
+    }
+}
+
+function sameSign(nb, nb2){
+
+    let s_nb = sign(nb)
+    let s_nb2 = sign(nb2)
+
+    if((s_nb == 1 && s_nb2 == 1) || (s_nb == 0 && s_nb2 == 0) || (s_nb == -1 && s_nb2 == -1)){
+        return true
+    } else if(s_nb == -1 && s_nb2 == 1 || s_nb == 1 && s_nb2 == -1 ||s_nb == 0 && s_nb2 == 1 || s_nb == 0 && s_nb2 == -1 || s_nb == -1 && s_nb2 == 0 || s_nb == 0 && s_nb2 == -1){
+        return false
+    }
+}
+
 
 //* Begin of tests
 const assert = require('assert');

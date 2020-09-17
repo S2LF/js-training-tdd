@@ -7,7 +7,14 @@
  */
 
 // Your code:
-
+function total(arr){
+       let tot = 0
+    arr.forEach(el => {
+        
+        tot += el
+    });
+    return tot
+}
 //* Begin of tests
 const assert = require('assert');
 
