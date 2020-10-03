@@ -13,9 +13,25 @@
  */
 
 // Your code:
+function keepFirst(str){
+    return str.substring(0,2)
+}
 
+function keepLast(str){
+    let length = str.length
+    return str.substring(length, length-2)
+}
+
+function keepFirstLast(str){
+    return str = keepFirst(keepLast(str))
+
+    return str.substring(3, 4)
+}
 //* Begin of tests
 const assert = require('assert');
 
-assert.fail('You must write your own tests');
+assert.strictEqual(keepFirst('topolino'), 'to')
+assert.strictEqual(keepLast('topolino'), 'no')
+
+// assert.fail('You must write your own tests');
 // End of tests */

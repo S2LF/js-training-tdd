@@ -11,9 +11,25 @@
  */
 
 // Your code:
+function cutFirst(str){
+    let res = str.slice(1)
+    return res
+}
 
+function cutLast(str){
+    let length = str.length
+    return str.slice(0, length-1)
+}
+
+function cutFirstLast(str){
+    return cutFirst(cutLast(str))
+}
 //* Begin of tests
 const assert = require('assert');
 
-assert.fail('You must write your own tests');
+assert.strictEqual(cutFirst('topo'), 'opo')
+assert.strictEqual(cutLast('topo'), 'top')
+assert.strictEqual(cutFirstLast('topo'), 'op')
+
+// assert.fail('You must write your own tests');
 // End of tests */

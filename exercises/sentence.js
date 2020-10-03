@@ -8,6 +8,13 @@
 
 // Your code:
 
+function sentence(array){
+
+    let str = array.join(' ')
+    return str
+}
+
+
 //* Begin of tests
 const assert = require('assert');
 

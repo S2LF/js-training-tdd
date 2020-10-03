@@ -9,7 +9,26 @@
  */
 
 // Your code:
+function multiply(nb, nb1){
+    if(!isNaN(nb) && !isNaN(nb1)){
+        let answer = nb
+        for(let i=0; i<nb1-1; i++ ){
+            answer += nb
+        }
 
+        if((nb > 0 && nb1 > 0) || (nb<0 && nb1<0)){
+            return answer;
+        } else if(nb== 0 || nb1 == 0){
+            return 0; 
+        } else if(nb < 0 || nb1 < 0){
+            for(let i=0; i<nb1-1; i-- ){
+                answer += nb
+            }
+            return -(answer)
+        }
+            
+    } 
+}
 //* Begin of tests
 const assert = require('assert');
 
